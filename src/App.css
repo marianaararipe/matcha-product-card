@@ -1,0 +1,23 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+/* Attribution Style*/
+.attribution {
+  font-size: 11px;
+  margin-top: 15px;
+  text-align: center;
+  color: #000;
+}
+.attribution a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+.attribution a:hover,
+.attribution a:focus {
+  text-decoration: underline;
+}

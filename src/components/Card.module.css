@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* ========== CARD PRINCIPAL ========== */
+.card {
+  /* Layout */
+  position: relative;
+  width: 350px;
+  padding: 10px;
+
+  /* Visual */
+  background-color: var(--color-card-bg);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-default);
+
+  /* Conteúdo */
+  overflow: hidden;
+
+  /* Tipografia */
+  font-family: var(--font-base);
+}
+
+/* ========== CONTAINER DA IMAGEM ========== */
+.image_container {
+  /* Layout */
+  position: relative;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+
+  /* Visual */
+  border-radius: var(--radius-lg);
+  background-color: var(--color-primary);
+}
+
+.card_image {
+  /* Tamanho da imagem */
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ========== PREÇO NO CANTO SUPERIOR ========== */
+.card_price {
+  /* Layout */
+  position: absolute;
+  top: 0;
+  right: -3px;
+
+  /* Tipografia */
+  font-size: var(--text-size-lg);
+  font-weight: 500;
+  color: var(--color-text);
+
+  /* Visual */
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 8px 18px 10px 18px;
+  border-radius: 0 0 0 var(--radius-md);
+}
+
+/* ========== FAIXA DE ENTREGA GRÁTIS ========== */
+.card_badge {
+  /* Layout */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: -50px;
+  height: 75px;
+
+  /* Visual */
+  background-color: var(--color-primary);
+  border-radius: 0 0 var(--radius-xl) var(--radius-xl);
+}
+
+.text_badge {
+  /* Tipografia */
+  font-size: var(--text-size-sm);
+  font-weight: 300;
+  color: white;
+
+  /* Espaçamento */
+  margin-bottom: 5px;
+}
+
+/* ========== CONTEÚDO DO CARD ========== */
+.card_info {
+  padding: 16px 25px;
+}
+
+.line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card_title {
+  font-size: var(--text-size-lg);
+  font-weight: 500;
+}
+
+.card_btn {
+  /* Tipografia */
+  font-size: var(--text-size-md);
+  font-weight: 400;
+  color: var(--color-text);
+
+  /* Interação */
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  text-decoration: underline 1px;
+  transition: color 0.3s ease;
+}
+
+.card_btn:hover {
+  color: var(--color-primary);
+}
+
+/* ========== TAGS DOS INGREDIENTES ========== */
+.card_tags {
+  /* Layout */
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.card_tags span {
+  /* Visual */
+  background-color: var(--color-tags-bg);
+  border-radius: var(--radius-sm);
+
+  /* Tipografia */
+  font-size: var(--text-size-sm);
+  font-weight: 400;
+
+  /* Espaçamento */
+  padding: 5px 12px;
+
+  /* Interação */
+  cursor: pointer;
+}
+
+
+
